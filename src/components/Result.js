@@ -39,7 +39,7 @@ export default function Result() {
         <Container>
             <div>Search Results for "{text}"</div>
             {photos.photo &&
-                <ImageList cols={4}>
+                <ImageList cols={5}>
                     {photos.photo.map((item) => (
                             <ImageListItem key={item.id}
                                 onMouseOver={() => setIsHovering(item.id)}
@@ -54,7 +54,7 @@ export default function Result() {
                                 }}
                             >
                                 <img
-                                    src={`https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`}
+                                    src={`https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_q.jpg`}
                                     alt={item.title}
                                     loading="lazy"
                                 />
