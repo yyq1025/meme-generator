@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/search" element={<Result />} />
-            <Route path="/edit" element={<Edit />} />
+            {/* <Route path="/edit" element={<Edit />} /> */}
           </Routes>
         </BrowserRouter>
       // </Box>

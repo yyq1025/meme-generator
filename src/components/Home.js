@@ -31,6 +31,7 @@ export default function Home() {
                     text: value
                 }).toString()
             });
+            setValue('');
         }
     };
 
