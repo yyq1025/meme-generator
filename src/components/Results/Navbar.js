@@ -8,6 +8,7 @@ import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
 import ClearIcon from "@mui/icons-material/Clear";
 import SearchIcon from "@mui/icons-material/Search";
+import Tooltip from "@mui/material/Tooltip";
 
 export default function Navbar() {
   const [value, setValue] = useState("");
@@ -58,13 +59,11 @@ export default function Navbar() {
             inputProps={{ "aria-label": "search google maps" }}
           />
           {value && (
-            <IconButton
-              sx={{ p: "10px" }}
-              aria-label="clear"
-              onClick={handleClear}
-            >
-              <ClearIcon />
-            </IconButton>
+            <Tooltip title="Clear" arrow>
+              <IconButton aria-label="clear" onClick={handleClear}>
+                <ClearIcon />
+              </IconButton>
+            </Tooltip>
           )}
         </Paper>
       </Toolbar>

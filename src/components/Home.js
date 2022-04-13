@@ -8,6 +8,7 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import ClearIcon from "@mui/icons-material/Clear";
 import SearchIcon from "@mui/icons-material/Search";
+import Tooltip from "@mui/material/Tooltip";
 
 export default function Home() {
   const [value, setValue] = useState("");
@@ -59,23 +60,27 @@ export default function Home() {
             inputProps={{ "aria-label": "search google maps" }}
           />
           {value && (
-            <IconButton
-              sx={{ p: "10px" }}
-              aria-label="clear"
-              onClick={handleClear}
-            >
-              <ClearIcon />
-            </IconButton>
+            <Tooltip title="Clear" arrow>
+              <IconButton
+                sx={{ p: "10px" }}
+                aria-label="clear"
+                onClick={handleClear}
+              >
+                <ClearIcon />
+              </IconButton>
+            </Tooltip>
           )}
           <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-          <IconButton
-            type="submit"
-            color="primary"
-            sx={{ p: "10px" }}
-            aria-label="search"
-          >
-            <SearchIcon />
-          </IconButton>
+          <Tooltip title="Search" arrow>
+            <IconButton
+              type="submit"
+              color="primary"
+              sx={{ p: "10px" }}
+              aria-label="search"
+            >
+              <SearchIcon />
+            </IconButton>
+          </Tooltip>
         </Paper>
       </Container>
     </Box>
