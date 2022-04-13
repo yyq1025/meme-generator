@@ -14,7 +14,7 @@ import Edit from './Edit';
 import Navbar from './Navbar';
 
 export default function Result() {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const searchParams = useSearchParams()[0];
     const text = searchParams.get("text");
 
     const navigate = useNavigate();
@@ -104,20 +104,11 @@ export default function Result() {
                                 <ImageListItem key={`${item.server}${item.id}${item.secret}`}
                                     onMouseOver={() => setIsHovering(item.id)}
                                     onMouseLeave={() => setIsHovering(null)}
-                                    // component="button"
                                     onClick={() => {
                                         setModalData({ title: item.title, src: `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg` });
                                         setIsOpen(true);
                                     }}
                                     sx={{ cursor: 'pointer' }}
-                                // component={Link}
-                                // to={{
-                                //     pathname: "/edit",
-                                //     search: createSearchParams({
-                                //         title: item.title,
-                                //         src: `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`
-                                //     }).toString()
-                                // }}
                                 >
                                     <img
                                         src={`https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_q.jpg`}

@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container"
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
-import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import ClearIcon from '@mui/icons-material/Clear';
 import SearchIcon from '@mui/icons-material/Search';
@@ -46,7 +44,7 @@ export default function Navbar() {
                     sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: '100%', bgcolor: 'whitesmoke' }}
                     onSubmit={handleSubmit}
                 >
-                    <SearchIcon sx={{ p: '10px' }} />
+                    <SearchIcon sx={{ p: '8px' }} />
                     <InputBase
                         sx={{ ml: 1, flex: 1 }}
                         placeholder="Search Your Meme"
