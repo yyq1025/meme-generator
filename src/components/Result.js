@@ -88,7 +88,7 @@ export default function Result() {
                 <IconButton color='inherit' onClick={() => navigate('/')}>
                     <ArrowBackIcon />
                 </IconButton>
-                <Typography variant='h6' display={'inline'}>{total.toLocaleString()} Results for "{text}"</Typography></Box>
+                <Typography variant='h6' display={'inline'}>{total.toLocaleString()} Results for &quot;${text}&quot;</Typography></Box>
                     <InfiniteScroll
                         dataLength={photo.length}
                         scrollThreshold={1}

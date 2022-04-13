@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import PropTypes from 'prop-types';
 import { exportComponentAsJPEG } from "react-component-export-image";
 import Button from "@mui/material/Button";
 import CardMedia from '@mui/material/CardMedia';
@@ -13,6 +14,13 @@ import Grid from '@mui/material/Grid';
 import Stack from "@mui/material/Stack";
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+
+Edit.propTypes = {
+    isOpen: PropTypes.bool,
+    setIsOpen: PropTypes.func,
+    title: PropTypes.string,
+    src: PropTypes.string
+}
 
 export default function Edit(props) {
     const { isOpen, setIsOpen, title, src } = props;
