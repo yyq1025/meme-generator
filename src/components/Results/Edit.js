@@ -23,6 +23,7 @@ Edit.propTypes = {
 };
 
 export default function Edit(props) {
+  // a dialog allowing users to edit the picture
   const { isOpen, setIsOpen, title, src } = props;
 
   const image = useRef();

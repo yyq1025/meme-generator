@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { API_KEY } from "../../constants/constant";
+import { API_KEY } from "../../constants/api_key";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
@@ -14,6 +14,7 @@ import Edit from "./Edit";
 import Navbar from "./Navbar";
 
 export default function Result() {
+  // search result page
   const searchParams = useSearchParams()[0];
   const text = searchParams.get("text");
 
