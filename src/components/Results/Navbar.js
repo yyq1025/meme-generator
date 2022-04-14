@@ -56,7 +56,7 @@ export default function Navbar() {
             placeholder="Search Your Meme"
             value={value}
             onChange={handleChange}
-            inputProps={{ "aria-label": "search google maps" }}
+            inputProps={{ "aria-label": "search memes" }}
           />
           {value && (
             <Tooltip title="Clear" arrow>
