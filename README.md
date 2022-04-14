@@ -68,6 +68,10 @@ MUI: https://mui.com/material-ui/getting-started/installation/
 
 React Router: https://reactrouter.com/docs/en/v6
 
+ESLint: https://eslint.org/
+
+Prettier: https://prettier.io/docs/en/index.html
+
 react-component-export-image: https://www.npmjs.com/package/react-component-export-image
 
 react-infinite-scroll-component: https://www.npmjs.com/package/react-infinite-scroll-component
