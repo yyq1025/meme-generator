@@ -2,6 +2,8 @@
 
 by yangyq@umich.edu
 
+Preview: https://codesandbox.io/s/meme-generator-vooqju
+
 ## How to run?
 
 ```
